@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CineApp.MainPage">
+
+    <StackLayout BackgroundColor="#312340">
+
+
+
+
+        <!-- izquierda,arriba,derecha, abajo -->
+
+        <StackLayout Margin="20,50,20,20">
+
+            <!--IMAGEN-->
+            <ContentView Margin="20,90,20,20">
+                <Image Source="logo.png" WidthRequest="160" />
+            </ContentView>
+
+
+            <StackLayout Padding="30,10,30,10">
+                <StackLayout Padding="0,0,0,20">
+                    <Entry x:Name="txtemail" PlaceholderColor="#d46874" Placeholder="Ingrese su Correo" Keyboard="Email" HeightRequest="70"/>
+                </StackLayout>
+                <StackLayout Padding="0,0,0,30">
+                    <Entry x:Name="txtpass" PlaceholderColor="#d46874" Placeholder="Ingrese su Contraseña"  Keyboard="Text" HeightRequest="70"/>
+                </StackLayout>
+
+                <StackLayout  Padding="0,0,0,30">
+                    <Label Text="¿Has olvidado tu contraseña?"></Label>
+                </StackLayout>
+
+
+
+                <StackLayout>
+                    <StackLayout Margin="0,0,0,10">
+                        <Button CornerRadius="20" x:Name="btnSesion" BackgroundColor="#d43454 " Text="Iniciar Sesión" Clicked="btnSesion_Clicked"></Button>
+                    </StackLayout>
+                    <StackLayout Margin="0,0,0,10">
+                        <Button   CornerRadius="20" x:Name="btnRegistro" BackgroundColor="#6E656E" Text="Registrarse" Clicked="btnRegistro_Clicked"></Button>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+
+
+
+        </StackLayout>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
